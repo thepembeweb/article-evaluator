@@ -9,14 +9,9 @@ const mockAPIResponse = require('./mockAPI.js')
 const aylienTextApi = require('aylien_textapi')
 
 const apiEngine = new aylienTextApi({
-  application_id: '64953d6d',
-  application_key: 'f6af06ad7a9cdac5dda3f75293fa69ac'
+  application_id: process.env.API_ID,
+  application_key: process.env.API_KEY
 })
-
-// const apiEngine = new aylien({
-//   application_id: process.env.API_ID,
-//   application_key: process.env.API_KEY
-// })
 
 const app = express()
 

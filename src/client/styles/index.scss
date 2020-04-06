@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+@import '_resets';
+@import '_footer';
+@import '_header';
+@import '_main';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  display: grid;
+  grid-template-areas: 'header' 'main' 'footer';
+  grid-template-columns: 100%;
+  grid-template-rows: 50px 1fr 50px;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Special Elite', cursive;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}

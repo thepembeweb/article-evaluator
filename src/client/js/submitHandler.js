@@ -1,6 +1,5 @@
 import URL_REGEX from './validator'
 
-const baseURL = '/evaluate'
 const validateUrl = url => URL_REGEX.test(url)
 
 /**
@@ -9,7 +8,7 @@ const validateUrl = url => URL_REGEX.test(url)
  * @param {String} link - Article url that we want to evaluate.
  * @param {String} path - Path for server endpoint that will help us with analysis process.
  */
-const _evaluateData = async (link, path = baseURL) => {
+const _evaluateData = async (link, path = '/evaluate') => {
   return await fetch(path, {
     method: 'POST',
     cache: 'no-cache',

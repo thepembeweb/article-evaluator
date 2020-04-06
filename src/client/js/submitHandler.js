@@ -1,6 +1,6 @@
 import URL_REGEX from './validator'
 
-const baseURL = 'http://localhost:80/evaluate'
+const baseURL = 'http://localhost:8081/evaluate'
 const validateUrl = url => URL_REGEX.test(url)
 
 /**
